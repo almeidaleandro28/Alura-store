@@ -4,3 +4,25 @@
 @import "header";
 @import "main";
 @import "footer";
+
+html {
+  font-family: $f-roboto;
+  font-size: map-get($f-font-size, "normal" );
+  
+}
+
+
+.body {
+  background-color: $c-white;
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+                        "header"
+                        "main"  
+                        "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 5rem auto auto;
+}
+
+
+

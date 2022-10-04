@@ -1,0 +1,32 @@
+.main {
+  background-color: $c-orange;
+  grid-area: main;
+}
+
+.highlights{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 33,33%);
+  height: calc( 100vh - 5rem);
+  .highlights__principal {
+    background-image: url(".././img/fortinet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column-start:  1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .highlights__secundary {
+    background-image: url();
+  }
+  .highlights__title {}
+}
+
+.highlights__categories{
+  .highlights__categories___list {}
+  .highlights__categories___item {}
+  .highlights__categories___link {}
+  .highlights__categories___icone {}
+}
