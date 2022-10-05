@@ -24,5 +24,11 @@ html {
   grid-template-rows: 5rem auto auto;
 }
 
+a {
+  text-decoration: none;
+  list-style: none;
+  color: $c-black;
+}
+
 
 
