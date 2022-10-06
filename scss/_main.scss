@@ -8,6 +8,7 @@
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 33,33%);
   height: calc( 100vh - 5rem);
+  text-align: center;
   .highlights__principal {
     background-image: url(".././img/fortinet.jpg");
     background-repeat: no-repeat;
@@ -53,7 +54,14 @@
     grid-row-end: 4;
   }
 
-  .highlights__title {}
+  .highlights__title {
+    color: $c-white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: map-get($f-font-size, "small");
+    font-weight: map-get($f-weight, "bold" );
+    padding: .6rem;
+    width: 100%;
+  }
 }
 
 .highlights__categories{
@@ -65,7 +73,22 @@
     grid-template-rows: repeat(2, auto);
     height: 100%;
   }
-  .highlights__categories___item {}
-  .highlights__categories___link {}
+  .highlights__categories___item {
+    background: $c-light;
+    border: 5px solid $c-black;
+    color: $c-gray-dark;
+    padding: 1rem;
+    
+  }
+  .highlights__categories___link {
+    color: inherit;
+  }
   .highlights__categories___icone {}
+}
+
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  
 }

@@ -73,6 +73,7 @@ table {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 33, 33%);
   height: calc(100vh - 5rem);
+  text-align: center;
 }
 .highlights .highlights__principal {
   background-image: url(".././img/fortinet.jpg");
@@ -117,6 +118,15 @@ table {
   grid-row-start: 3;
   grid-row-end: 4;
 }
+.highlights .highlights__title {
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.563rem;
+  font-weight: 700;
+  padding: 0.6rem;
+  width: 100%;
+}
+
 .highlights__categories {
   grid-column: 1/3;
   grid-row: 3/4;
@@ -127,6 +137,21 @@ table {
   grid-template-rows: repeat(2, auto);
   height: 100%;
 }
+.highlights__categories .highlights__categories___item {
+  background: #fdfdfd;
+  border: 5px solid #000000;
+  color: #333333;
+  padding: 1rem;
+}
+.highlights__categories .highlights__categories___link {
+  color: inherit;
+}
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 .footer {
   background-color: #0099ff;
   grid-area: footer;
