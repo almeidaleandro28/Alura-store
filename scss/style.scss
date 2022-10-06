@@ -16,6 +16,7 @@ html {
   background-color: $c-white;
   display: grid;
   height: 100vh;
+  width: 100%;
   grid-template-areas:
                         "header"
                         "main"  

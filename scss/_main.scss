@@ -1,12 +1,14 @@
 .main {
   background-color: $c-orange;
   grid-area: main;
+  width: 100%;
 }
 
 .highlights{
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 33,33%);
+  gap: .2rem;
   height: calc( 100vh - 5rem);
   text-align: center;
   .highlights__principal {
@@ -24,6 +26,7 @@
     background-image: url("../img/pubg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -32,6 +35,8 @@
   .highlights__secundary:nth-of-type(3){
     background-image: url("../img/slack.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -40,6 +45,8 @@
   .highlights__secundary:nth-of-type(4){
     background-image: url("../img/whatsap.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -48,6 +55,8 @@
   .highlights__secundary:nth-of-type(5){
     background-image: url("../img/cs-go.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
