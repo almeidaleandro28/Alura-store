@@ -161,6 +161,41 @@ table {
   justify-content: center;
 }
 
+.popular {
+  padding: 2rem 0;
+}
+
+.popular__content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: card-content;
+  padding: 1rem 0;
+}
+
+.popular__card {
+  background-color: #fdfdfd;
+  display: grid;
+  grid-template-areas: "card-img" "card-body";
+  grid-template-columns: 100%;
+  margin-left: 1rem;
+  width: calc(20% - 1rem);
+}
+.popular__card .popular__card___imagem {
+  grid-area: card-img;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.popular__card___body {
+  display: grid;
+  grid-area: card-body;
+  grid-template-areas: "card-header" "card-content";
+  grid-template-rows: 50px auto;
+  padding: 0.75rem;
+  row-gap: 0.5rem;
+}
+
 .footer {
   background-color: #0099ff;
   grid-area: footer;
