@@ -166,6 +166,17 @@ table {
   padding: 2rem 0;
 }
 
+.popular__itens .popular__header {
+  border-bottom: 1px solid #808080;
+  display: flex;
+  justify-content: space-between;
+}
+.popular__itens .popular__button {
+  background: transparent;
+  border: none;
+  color: #333333;
+}
+
 .popular__content {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +206,22 @@ table {
   grid-template-rows: 50px auto;
   padding: 0.75rem;
   row-gap: 0.5rem;
+}
+
+.popular__card___header .popular__card___title {
+  color: #333333;
+  font-size: 1.953rem;
+}
+.popular__card___header .popular__card___data {
+  color: #808080;
+  font-size: 1.563rem;
+}
+
+.popular__card___description {
+  color: #333333;
+  line-height: 1.5;
+  margin: 1rem 0;
+  text-align: justify;
 }
 
 .footer {

@@ -112,8 +112,18 @@
 .popular__itens {
   
   .popular__info {}
+	.popular__header {
+		border-bottom: 1px solid $c-gray;
+		display: flex;
+		justify-content: space-between;
+
+	}
   .popular__title {}
-  .popular__button {}
+  .popular__button {
+		background: transparent;
+		border: none;
+		color: $c-gray-dark;
+	}
 }
 
 // incons
@@ -158,8 +168,19 @@
 
 .popular__card___header {
   
-  .popular__card___title {}
-  .popular__card___data {}
+  .popular__card___title {
+		color: $c-gray-dark;
+		font-size: map-get($f-font-size, "medium");
+	}
+  .popular__card___data {
+		color: $c-gray;
+		font-size: map-get($f-font-size, "small");
+	}
 }
 
-.popular__card___description {}
+.popular__card___description {
+	color: $c-gray-dark;
+	line-height: 1.5;
+	margin: 1rem 0;
+	text-align: justify;
+}
