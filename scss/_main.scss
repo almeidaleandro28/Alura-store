@@ -105,7 +105,7 @@
 // section popular 
 .popular {
   background-color: $c-light;
-  padding: 2rem 0;
+  padding: 3rem 2rem;
   
 }
 
@@ -148,6 +148,9 @@
   grid-template-rows: 174px auto;
   margin-left: 1rem;
   width: calc(20% - 1rem );
+	.popular__card:last-child{
+		margin-left: 0;
+	}
   .popular__card___imagem {
     grid-area: card-img;
     width: 100%;

@@ -163,7 +163,7 @@ table {
 
 .popular {
   background-color: #fdfdfd;
-  padding: 2rem 0;
+  padding: 3rem 2rem;
 }
 
 .popular__itens .popular__header {
@@ -192,6 +192,9 @@ table {
   grid-template-rows: 174px auto;
   margin-left: 1rem;
   width: calc(20% - 1rem);
+}
+.popular__card .popular__card:last-child {
+  margin-left: 0;
 }
 .popular__card .popular__card___imagem {
   grid-area: card-img;
