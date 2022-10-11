@@ -177,14 +177,14 @@ table {
   display: grid;
   grid-template-areas: "card-img" "card-body";
   grid-template-columns: 100%;
+  grid-template-rows: 174px auto;
   margin-left: 1rem;
   width: calc(20% - 1rem);
 }
 .popular__card .popular__card___imagem {
   grid-area: card-img;
-  height: auto;
-  display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .popular__card___body {
