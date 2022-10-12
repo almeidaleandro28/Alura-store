@@ -68,6 +68,14 @@ table {
   justify-content: center;
   padding: 1rem 0;
 }
+.menu__link {
+  color: #333333;
+  padding: 0.5rem 1rem;
+}
+.menu__link:hover {
+  color: orange;
+}
+
 .main {
   background-color: #ff8080;
   grid-area: main;

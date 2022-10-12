@@ -11,5 +11,13 @@
   .menu__item {}
 }
 
-.menu__link {}
+.menu__link {
+  color: $c-gray-dark;
+  padding: .5rem 1rem;
+  &:hover {
+    // border-bottom: 2px solid $c-blue-dark;
+    color: orange;
+  }
+}
+
 .active {}
