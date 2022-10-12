@@ -1,4 +1,15 @@
 .header {
-  background-color: $c-green;
+  background-color: $c-gray-light;
   grid-area: header;
 }
+
+.menu{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  .menu__list {}
+  .menu__item {}
+}
+
+.menu__link {}
+.active {}
