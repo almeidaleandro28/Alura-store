@@ -241,8 +241,13 @@ table {
 }
 
 .footer {
-  background-color: #0099ff;
+  background-color: #fdfdfd;
+  border-top: 2px solid #808080;
+  color: #333333;
+  font-size: 1.953rem;
   grid-area: footer;
+  text-align: center;
+  padding: 1rem;
 }
 
 html {

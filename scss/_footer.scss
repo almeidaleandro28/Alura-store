@@ -1,4 +1,9 @@
 .footer {
-  background-color: $c-blue;
+  background-color: $c-light;
+  border-top: 2px solid $c-gray;
+  color: $c-gray-dark;
+  font-size: map-get($f-font-size, "medium");
   grid-area: footer;
+  text-align: center;
+  padding: 1rem;
 }
