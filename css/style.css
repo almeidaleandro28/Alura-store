@@ -249,6 +249,26 @@ table {
   text-align: center;
   padding: 1rem;
 }
+@media screen and (max-width: 576px) {
+  .footer {
+    background-color: #ff0000;
+  }
+}
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  .footer {
+    background-color: #0000ff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer {
+    background-color: #008000;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    background-color: #ffc0cb;
+  }
+}
 
 html {
   font-family: "Roboto", sans-serif;
