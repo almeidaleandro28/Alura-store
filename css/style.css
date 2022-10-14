@@ -100,7 +100,7 @@ table {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.highlights .highlights__secundary {
+.highlights .highlights__secundary:nth-of-type(2) {
   background-image: url("../img/pubg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,6 +109,13 @@ table {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+@media screen and (max-width: 576px) {
+  .highlights .highlights__secundary:nth-of-type(2) {
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
 }
 .highlights .highlights__secundary:nth-of-type(3) {
   background-image: url("../img/slack.png");
@@ -120,6 +127,13 @@ table {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+@media screen and (max-width: 576px) {
+  .highlights .highlights__secundary:nth-of-type(3) {
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+}
 .highlights .highlights__secundary:nth-of-type(4) {
   background-image: url("../img/whatsap.png");
   background-repeat: no-repeat;
@@ -130,6 +144,13 @@ table {
   grid-row-start: 3;
   grid-row-end: 4;
 }
+@media screen and (max-width: 576px) {
+  .highlights .highlights__secundary:nth-of-type(4) {
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+}
 .highlights .highlights__secundary:nth-of-type(5) {
   background-image: url("../img/cs-go.jpg");
   background-repeat: no-repeat;
@@ -139,6 +160,13 @@ table {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+@media screen and (max-width: 576px) {
+  .highlights .highlights__secundary:nth-of-type(5) {
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
 }
 .highlights .highlights__title {
   color: #f1f1f1;

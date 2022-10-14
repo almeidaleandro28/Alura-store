@@ -22,7 +22,7 @@
     grid-row-end: 3;
   }
 
-  .highlights__secundary {
+  .highlights__secundary:nth-of-type(2) {
     background-image: url("../img/pubg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,13 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    @include device( phone ){
+      display: none;
+      grid-column: none;
+      grid-row: none;
+    }
   }
+  
   .highlights__secundary:nth-of-type(3){
     background-image: url("../img/slack.png");
     background-repeat: no-repeat;
@@ -41,7 +47,12 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    @include device( phone ){
+      display: none;
+      grid-column: none;
+      grid-row: none;
   }
+}
   .highlights__secundary:nth-of-type(4){
     background-image: url("../img/whatsap.png");
     background-repeat: no-repeat;
@@ -51,7 +62,13 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
+    @include device( phone ){
+      display: none;
+      grid-column: none;
+      grid-row: none;
   }
+}
+ 
   .highlights__secundary:nth-of-type(5){
     background-image: url("../img/cs-go.jpg");
     background-repeat: no-repeat;
@@ -61,6 +78,11 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    @include device( phone ){
+      display: none;
+      grid-column: none;
+      grid-row: none;
+    }
   }
 
   .highlights__title {
