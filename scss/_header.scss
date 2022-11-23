@@ -5,7 +5,7 @@
 
 .menu{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 1rem 0;
   .menu__list {}
   .menu__item {}
@@ -15,8 +15,9 @@
   color: $c-gray-dark;
   padding: .5rem 1rem;
   &:hover {
-    // border-bottom: 2px solid $c-blue-dark;
+    border-bottom: 2px solid $c-blue-dark;
     color: orange;
+    
   }
 }
 

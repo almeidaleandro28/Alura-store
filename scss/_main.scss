@@ -156,11 +156,19 @@
 	@include device( phone ){
 		
 	}
+	@include device( tablet ){
+		
+	}
+	@include device( desktops ){
+	
+	}
   
 }
 
 .popular__itens {
-	@include device( phone ){
+	@include device( phone ){	
+	}
+	@include device( desktops ){
 		
 	}
 
@@ -190,7 +198,12 @@
   grid-area: card-content;
   padding: 1rem 0;
 	@include device( phone){
+		flex-direction: column;	
+	}
+  @include device( tablet ){
 		flex-direction: column;
+  }
+	@include device( desktops ){
 		
 	}
 }
@@ -210,7 +223,13 @@
 	}
 	@include device( phone ){
 		margin-bottom: 1rem;
+		margin-left: 0;
 		width: 100%;
+	}
+	@include device( tablet ){
+		grid-template-columns: 50%;
+		width: calc(100% - 1rem);
+		margin-bottom: 1rem;
 	}
 	.popular__card___imagem {
     grid-area: card-img;

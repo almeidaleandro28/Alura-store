@@ -65,7 +65,7 @@ table {
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 1rem 0;
 }
 .menu__link {
@@ -73,6 +73,7 @@ table {
   padding: 0.5rem 1rem;
 }
 .menu__link:hover {
+  border-bottom: 2px solid #0073e6;
   color: orange;
 }
 
@@ -271,7 +272,11 @@ table {
     flex-direction: column;
   }
 }
-
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  .popular__content {
+    flex-direction: column;
+  }
+}
 .popular__card {
   background-color: #fdfdfd;
   display: grid;
@@ -287,7 +292,15 @@ table {
 @media screen and (max-width: 576px) {
   .popular__card {
     margin-bottom: 1rem;
+    margin-left: 0;
     width: 100%;
+  }
+}
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  .popular__card {
+    grid-template-columns: 50%;
+    width: calc(100% - 1rem);
+    margin-bottom: 1rem;
   }
 }
 .popular__card .popular__card___imagem {
