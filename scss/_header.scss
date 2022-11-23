@@ -7,8 +7,26 @@
   display: flex;
   justify-content: left;
   padding: 1rem 0;
-  .menu__list {}
-  .menu__item {}
+  height: 100%;
+  
+  @include device( phone ){
+   
+  }
+  .menu__list {
+    @include device( phone ){
+      flex: 1;
+      text-align: center;
+      
+    }
+  }
+  .menu__item {
+   @include device( phone ){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+  }
 }
 
 .menu__link {
@@ -17,6 +35,8 @@
   &:hover {
     border-bottom: 2px solid $c-blue-dark;
     color: orange;
+  }
+  @include device( phone ){
     
   }
 }

@@ -23,6 +23,9 @@ html {
                         "footer";
   grid-template-columns: auto;
   grid-template-rows: 5rem auto auto;
+  @include device( phone ){
+    grid-template-rows: auto;
+  }
 }
 
 a {
