@@ -6,16 +6,6 @@
   grid-area: footer;
   text-align: center;
   padding: 1rem;
-  @include device( phone ){
-    background-color: #ff0000;
-  }
-  @include device( tablet ) {
-    background-color: #0000ff;
-  }
-  @include device( desktops ) {
-    background-color: #008000;
-  }
-  @include device( large-dekstop ){
-    background-color: #ffc0cb;
-  }
+  
+
 }

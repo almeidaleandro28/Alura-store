@@ -10,12 +10,13 @@
   height: 100%;
   
   @include device( phone ){
-   
+		justify-content: center;
   }
   .menu__list {
     @include device( phone ){
-      flex: 1;
-      text-align: center;
+      // flex: 1;
+			text-align: center;
+      
       
     }
   }
@@ -23,7 +24,7 @@
    @include device( phone ){
       display: flex;
       flex-direction: column;
-      justify-content: center;
+			
       
     }
   }
@@ -35,9 +36,11 @@
   &:hover {
     border-bottom: 2px solid $c-blue-dark;
     color: orange;
+		
   }
   @include device( phone ){
-    
+    width: max-content;
+	
   }
 }
 
